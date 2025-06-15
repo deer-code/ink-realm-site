@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ink Realm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        
+        .nav-links a.active {
+            color: #ffd700;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .content h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-card h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .email-link {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .email-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .response-time {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 2rem;
+            color: #333;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-radius: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+            
+            .content h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Ink Realm</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="content">
+                <h1>Contact Us</h1>
+                
+                <div class="contact-info">
+                    <p class="description">
+                        We'd love to hear from you! Whether you have questions, feedback, or need support, 
+                        don't hesitate to reach out to us. We're here to help and will get back to you as soon as possible.
+                    </p>
+                    
+                    <div class="contact-card">
+                        <div class="icon">📧</div>
+                        <h2>Email Us</h2>
+                        <p>Send us an email and we'll respond promptly</p>
+                        <br>
+                        <a href="mailto:luyongjianzuiqiang@gmail.com" class="email-link">
+                            luyongjianzuiqiang@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="response-time">
+                        <h3>📅 Response Time</h3>
+                        <p>We typically respond to all inquiries within 24-48 hours during business days.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Ink Realm. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

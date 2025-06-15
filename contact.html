@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - Contact Us</title>
+    <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-toggle">
+                <button id="zh-btn" class="lang-btn active">中文</button>
+                <button id="en-btn" class="lang-btn">English</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- 中文版本 -->
+            <div id="zh-content" class="content active">
+                <h1>联系我们</h1>
+                <div class="app-name-display">
+                    <span id="app-name-zh">应用名称</span>
+                </div>
+                
+                <div class="contact-section">
+                    <div class="email-card">
+                        <div class="email-icon">📧</div>
+                        <h2>邮箱联系</h2>
+                        <p>如果您有任何问题、建议或需要帮助，请通过邮箱联系我们：</p>
+                        <div class="email-display">
+                            <a href="mailto:support@example.com" id="email-link-zh">support@example.com</a>
+                        </div>
+                        <p class="email-note">我们会在24小时内回复您的邮件</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 英文版本 -->
+            <div id="en-content" class="content">
+                <h1>Contact Us</h1>
+                <div class="app-name-display">
+                    <span id="app-name-en">App Name</span>
+                </div>
+                
+                <div class="contact-section">
+                    <div class="email-card">
+                        <div class="email-icon">📧</div>
+                        <h2>Email Contact</h2>
+                        <p>If you have any questions, suggestions, or need assistance, please contact us via email:</p>
+                        <div class="email-display">
+                            <a href="mailto:support@example.com" id="email-link-en">support@example.com</a>
+                        </div>
+                        <p class="email-note">We will reply to your email within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="contact-script.js"></script>
+</body>
+</html>
